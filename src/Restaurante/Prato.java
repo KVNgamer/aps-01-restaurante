@@ -24,5 +24,12 @@ public class Prato {
 	public String getNome() {
 		return nome;
 	}
+	public void addIgrediente(String ingrediente) {
+		this.descricao+=ingrediente;
+	}
+	@Override
+	public String toString() {
+		return "Nome do prato: " + nome + ",\nDescrição do Prato: " + descricao +" \n";
+	}
 	
 }
